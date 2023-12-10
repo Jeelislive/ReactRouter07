@@ -12,6 +12,7 @@ import Layout from './Layout'
 import User from './components/User/User'
 import Github from './components/Github/Github'
 import { githubInfoLoader } from './components/Github/Github'
+import Login from './components/Login/Login'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "user/:userid",
         element: <User />
+      },
+      {
+        path: "login",
+        element: <Login />
       },
       {
         path: "github",
