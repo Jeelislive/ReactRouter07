@@ -13,16 +13,15 @@ export default function About() {
                     </div>
                     <div className="md:7/12 lg:w-6/12">
                         <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                            React development is carried out by passionate developers
+                            WE Are Here For DEVLOPMENT 
                         </h2>
                         <p className="mt-6 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
-                            accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
-                            aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                            Hello there! I'm Jeel Rupareliya, a passionate and creative UI/UX designer and web developer based in Ahmedabad. With a strong foundation in B.E In Information Technology, I bring 1.5 of experience in crafting immersive digital experiences that blend functionality with aesthetics.
                         </p>
                         <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                            I am always open to new challenges and collaborations. Whether you're looking for a UI/UX designer to transform your digital presence or a web developer to bring your ideas to life, let's connect and discuss how we can achieve your goals together.
+                            <p></p>
+                            Thank you for visiting my portfolio. I look forward to the opportunity of working together to create something extraordinary.
                         </p>
                     </div>
                 </div>
