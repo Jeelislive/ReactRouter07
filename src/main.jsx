@@ -12,7 +12,7 @@ import Layout from './Layout'
 import User from './components/User/User'
 import Github from './components/Github/Github'
 import { githubInfoLoader } from './components/Github/Github'
-import Login from './components/Login/Login'
+import Login from './components/Login/Login.jsx'
 
 const router = createBrowserRouter([
   {
