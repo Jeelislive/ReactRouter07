@@ -1,4 +1,7 @@
 import React, { useRef, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
+
 
 function Login() {
     const usernameRef = useRef(null);
@@ -11,60 +14,66 @@ function Login() {
     const [ password1Error, setPassword1Error ] = useState('');
     const [ password2Error, setPassword2Error ] = useState('');
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
         validateInputs();
     };
 
     const validateInputs = () => {
+
         const usernameValue = usernameRef.current.value.trim();
         const emailValue = emailRef.current.value.trim();
         const password1Value = password1Ref.current.value.trim();
         const password2Value = password2Ref.current.value.trim();
 
+        let hasError = false;
+
         if (usernameValue === '') {
             setUsernameError('*Username cannot be null');
+            hasError = true;
         } else if (usernameValue.length <= 4) {
             setUsernameError('*Username must be greater than 4');
+            hasError = true;
         } else {
             setUsernameError('');
         }
 
         if (emailValue === '') {
             setEmailError('*Email cannot be null');
+            hasError = true;
         } else if (!isEmail(emailValue)) {
             setEmailError('*Not a valid email');
+            hasError = true;
         } else {
             setEmailError('');
         }
 
         if (password1Value === '') {
             setPassword1Error('*password cannot be null');
+            hasError = true;
         } else if (password1Value.length <= 5) {
             setPassword1Error('*minimum 6 char');
+            hasError = true;
         } else {
             setPassword1Error('');
         }
 
         if (password2Value === '') {
             setPassword2Error('*confirm password cannot be null');
+            hasError = true;
         } else if (password2Value.length <= 5) {
             setPassword2Error('*minimum 6 char');
+            hasError = true;
         } else if (password1Value !== password2Value) {
             setPassword2Error('*passwords are not matching');
+            hasError = true;
         } else {
             setPassword2Error('');
         }
 
-        // If there are no errors, you can proceed with form submission
-        if (
-            !usernameError &&
-            !emailError &&
-            !password1Error &&
-            !password2Error
-        ) {
-            // Here you can submit the form or perform any other actions
-            console.log('Form submitted successfully');
+        if (!hasError) {
+            window.location.href = 'dashboard';
         }
     };
 
@@ -148,7 +157,9 @@ function Login() {
                         </div>
                         <br />
                         <center>
-                            <button type="submit" className="bg-green-500 text-white px-20 py-2 rounded-md hover:bg-green-600">Login</button>
+                            <button type="submit" onClick={ handleSubmit } className="bg-green-500 text-white px-20 py-2 rounded-md hover:bg-green-600">
+                                Login
+                            </button>
                         </center>
                     </form>
                 </div>

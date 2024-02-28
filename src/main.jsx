@@ -13,6 +13,7 @@ import User from './components/User/User'
 import Github from './components/Github/Github'
 import { githubInfoLoader } from './components/Github/Github'
 import Login from './components/Login/Login.jsx'
+import StudyMaterialHomepage from './components/Home/MainHome'
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path: "github",
         element: <Github />,
         loader: githubInfoLoader, // Move this line inside the object
+      },
+      {
+        path: "dashboard",
+        element: <StudyMaterialHomepage />,
+
       }
     ]
 
