@@ -1,9 +1,12 @@
 import React, { useRef, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+
 
 
 
 function Register() {
+
+    const navigate = useNavigate();
     const usernameRef = useRef(null);
     const emailRef = useRef(null);
     const password1Ref = useRef(null);
@@ -73,7 +76,7 @@ function Register() {
         }
 
         if (!hasError) {
-            window.location.href = 'dashboard';
+            navigate('/dashboard')
         }
     };
 
