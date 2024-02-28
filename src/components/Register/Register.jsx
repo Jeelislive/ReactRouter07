@@ -158,7 +158,7 @@ function Login() {
                         <br />
                         <center>
                             <button type="submit" onClick={ handleSubmit } className="bg-green-500 text-white px-20 py-2 rounded-md hover:bg-green-600">
-                                Login
+                                Register
                             </button>
                         </center>
                     </form>

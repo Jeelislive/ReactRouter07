@@ -10,10 +10,9 @@ import About from './components/About/About'
 import ContactUs from './components/ContactUs/ContactUs'
 import Layout from './Layout'
 import User from './components/User/User'
-import Github from './components/Github/Github'
-import { githubInfoLoader } from './components/Github/Github'
-import Login from './components/Login/Login.jsx'
-import StudyMaterialHomepage from './components/Home/MainHome'
+
+import Login from './components/Register/Register.jsx'
+import StudyMaterialHomepage from './components/Home/Dashbord'
 
 const router = createBrowserRouter([
   {
@@ -38,11 +37,6 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />
-      },
-      {
-        path: "github",
-        element: <Github />,
-        loader: githubInfoLoader, // Move this line inside the object
       },
       {
         path: "dashboard",
