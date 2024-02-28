@@ -11,8 +11,8 @@ import ContactUs from './components/ContactUs/ContactUs'
 import Layout from './Layout'
 import User from './components/User/User'
 
-import Login from './components/Register/Register.jsx'
-import StudyMaterialHomepage from './components/Home/Dashbord'
+import Register from './components/Register/Register.jsx'
+import Dashbord from './components/Home/Dashbord'
 
 const router = createBrowserRouter([
   {
@@ -35,12 +35,12 @@ const router = createBrowserRouter([
         element: <User />
       },
       {
-        path: "login",
-        element: <Login />
+        path: "register",
+        element: <Register />
       },
       {
         path: "dashboard",
-        element: <StudyMaterialHomepage />,
+        element: <Dashbord />,
 
       }
     ]

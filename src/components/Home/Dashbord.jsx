@@ -1,6 +1,6 @@
 import React from 'react';
 
-function StudyMaterialHomepage() {
+function Dashbord() {
     return (
         <div className="bg-gray-100 font-sans">
             <header className="bg-gray-800 text-white py-6">
@@ -25,4 +25,4 @@ function StudyMaterialHomepage() {
     );
 }
 
-export default StudyMaterialHomepage;
+export default Dashbord;

@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 
-function Login() {
+function Register() {
     const usernameRef = useRef(null);
     const emailRef = useRef(null);
     const password1Ref = useRef(null);
@@ -157,7 +157,7 @@ function Login() {
                         </div>
                         <br />
                         <center>
-                            <button type="submit" onClick={ handleSubmit } className="bg-green-500 text-white px-20 py-2 rounded-md hover:bg-green-600">
+                            <button type="submit" className="bg-green-500 text-white px-20 py-2 rounded-md hover:bg-green-600">
                                 Register
                             </button>
                         </center>
@@ -168,4 +168,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Register;
