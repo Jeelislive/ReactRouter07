@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link, NavLink } from 'react-router-dom';
-
 function StudyMaterialHomepage() {
     return (
         <div className="bg-gray-100 font-sans">
