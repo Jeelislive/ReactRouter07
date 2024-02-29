@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
 function Notes() {
@@ -23,19 +25,23 @@ function Notes() {
             <main className="container mx-auto mt-8 px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     { files.map(file => (
-                        <div key={ file.id } className="bg-white rounded-md p-4 shadow-sm">
+                        <div key={ file.id } className="bg-gradient-to-r from-gray-200 to-gray-300 rounded-md p-4 shadow-lg relative overflow-hidden">
                             <div className="flex items-center justify-between mb-2">
-                                <span className="font-semibold">{ file.name }</span>
+                                <span className="font-semibold text-gray-700">{ file.name }</span>
                                 <span className="text-gray-500">{ file.size }</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <a href={ file.link } target="_blank" rel="noopener noreferrer">
-                                    <button className="text-blue-500 hover:text-blue-600">Open</button>
+                                    <button className="text-white bg-blue-600 hover:bg-blue-700 rounded-lg px-3 py-1">Open</button>
                                 </a>
+                                <div className="absolute inset-y-0 right-0 mr-2 flex items-center">
+                                    <FontAwesomeIcon icon={ faFilePdf } className="text-red-500" />
+                                </div>
                             </div>
                         </div>
                     )) }
                 </div>
+
             </main>
         </div>
     );
