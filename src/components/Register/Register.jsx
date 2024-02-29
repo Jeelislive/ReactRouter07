@@ -2,8 +2,6 @@ import React, { useRef, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 
-
-
 function Register() {
 
     const navigate = useNavigate();
