@@ -7,7 +7,7 @@ function Notes() {
         { id: 2, name: 'Computer Organization & Architecture', size: '1.8 MB', link: 'https://drive.google.com/drive/folders/17EpTygE71lJ-nnySv2RJRw2cq8iVYWAN?usp=sharing' },
         { id: 3, name: 'Design Engineering – 1B', size: '3.2 MB', link: 'https://drive.google.com/drive/folders/17B7Tzir6YQkwgn2EKpj8e_-nzGUaa3LU?usp=sharing' },
         { id: 4, name: 'Object Oriented Programming -I', size: '2.5 MB', link: 'https://drive.google.com/drive/folders/17Bj0pV5Pj2mmCsbwITKSx5Xozio3QAfa?usp=sharing' },
-        { id: 5, name: 'https://drive.google.com/drive/folders/17Bj0pV5Pj2mmCsbwITKSx5Xozio3QAfa?usp=sharing', size: '1.8 MB', link: 'https://drive.google.com/drive/folders/17BY1X1OaPLV45s6Xd2Sf1HfEIWxznIjp?usp=sharing' },
+        { id: 5, name: 'Object Oriented Programming -I', size: '1.8 MB', link: 'https://drive.google.com/drive/folders/17BY1X1OaPLV45s6Xd2Sf1HfEIWxznIjp?usp=sharing' },
         { id: 6, name: 'Principles of Economics & Management', size: '3.2 MB', link: 'https://drive.google.com/drive/folders/17GtwGiy6UTq_PvMh2n0eg2b5fZDPPY2u?usp=sharing' },
         { id: 7, name: 'Document 7.pdf', size: '3.2 MB', link: 'https://example.com/document1' },
 

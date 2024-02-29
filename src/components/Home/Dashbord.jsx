@@ -20,8 +20,7 @@ function Dashbord() {
 
                     <li className="mx-6"><button onClick={ handleClickNotes } className="text-white hover:text-yellow-300">Notes </button></li>
                     <li className="mx-6"><a href="#extras" className="text-white hover:text-yellow-300">Extras</a></li>
-                    <li className="mx-6"><a href="#resources" className="text-white hover:text-yellow-300">Resources</a></li>
-                    <li className="mx-6"><a href="#community" className="text-white hover:text-yellow-300">Community</a></li>
+
                 </ul>
             </nav>
             { <div className="content">
