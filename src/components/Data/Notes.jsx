@@ -3,12 +3,12 @@ import React from 'react';
 
 function Notes() {
     const files = [
-        { id: 1, name: 'Document 1.pdf', size: '2.5 MB', link: 'https://drive.google.com/drive/folders/17GOLXdCbTF9tBJimMTa-Gl79V4_QMe5D?usp=sharing' },
-        { id: 2, name: 'Document 2.pdf', size: '1.8 MB', link: 'https://example.com/document1' },
-        { id: 3, name: 'Document 3.pdf', size: '3.2 MB', link: 'https://example.com/document1' },
-        { id: 4, name: 'Document 4.pdf', size: '2.5 MB', link: 'https://example.com/document1' },
-        { id: 5, name: 'Document 5.pdf', size: '1.8 MB', link: 'https://example.com/document1' },
-        { id: 6, name: 'Document 6.pdf', size: '3.2 MB', link: 'https://example.com/document1' },
+        { id: 1, name: 'Discrete Mathematics', size: '2.5 MB', link: 'https://drive.google.com/drive/folders/17GOLXdCbTF9tBJimMTa-Gl79V4_QMe5D?usp=sharing' },
+        { id: 2, name: 'Computer Organization & Architecture', size: '1.8 MB', link: 'https://drive.google.com/drive/folders/17EpTygE71lJ-nnySv2RJRw2cq8iVYWAN?usp=sharing' },
+        { id: 3, name: 'Design Engineering – 1B', size: '3.2 MB', link: 'https://drive.google.com/drive/folders/17B7Tzir6YQkwgn2EKpj8e_-nzGUaa3LU?usp=sharing' },
+        { id: 4, name: 'Object Oriented Programming -I', size: '2.5 MB', link: 'https://drive.google.com/drive/folders/17Bj0pV5Pj2mmCsbwITKSx5Xozio3QAfa?usp=sharing' },
+        { id: 5, name: 'https://drive.google.com/drive/folders/17Bj0pV5Pj2mmCsbwITKSx5Xozio3QAfa?usp=sharing', size: '1.8 MB', link: 'https://drive.google.com/drive/folders/17BY1X1OaPLV45s6Xd2Sf1HfEIWxznIjp?usp=sharing' },
+        { id: 6, name: 'Principles of Economics & Management', size: '3.2 MB', link: 'https://drive.google.com/drive/folders/17GtwGiy6UTq_PvMh2n0eg2b5fZDPPY2u?usp=sharing' },
         { id: 7, name: 'Document 7.pdf', size: '3.2 MB', link: 'https://example.com/document1' },
 
     ];
