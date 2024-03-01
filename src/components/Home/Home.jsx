@@ -23,8 +23,10 @@ export default function Home() {
 
 
                 {/* Responsive image */}
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-10 ">
-                    <img className="w-full sm:w-auto rounded-lg drop-shadow-xl" src='https://a.slack-edge.com/9c84081/marketing/img/solutions/tech/png/billboard.png' alt="image1" />
+                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full">
+                    <a href="https://ibb.co/61sQMdj">
+                        <img src="https://i.ibb.co/QCm0g5y/pngwing-com.png" className="w-full h-auto sm:w-110vw sm:h-70vw lg:w-96 lg:h-60" alt="pngwing-com" />
+                    </a>
                 </div>
             </aside>
 
