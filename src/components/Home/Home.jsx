@@ -16,7 +16,7 @@ export default function Home() {
                 </div>
 
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96 rounded-lg drop-shadow-xl" src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2019/09/23163856/MBA-Study-Material.jpg" alt="image1" />
+                    <img z className="w-96 rounded-lg drop-shadow-xl" alt="image1" />
                 </div>
             </aside>
 
