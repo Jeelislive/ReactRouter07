@@ -11,7 +11,7 @@ export default function Contact() {
                                 Get in touch:
                             </h1>
                             <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
-                                Fill in the form to start a conversation
+                                Fill the form to start a conversation
                             </p>
 
                             <div className="flex items-center mt-8 text-gray-600">
@@ -82,7 +82,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                    Kernel@JPDT.org
                                 </div>
                             </div>
                         </div>
