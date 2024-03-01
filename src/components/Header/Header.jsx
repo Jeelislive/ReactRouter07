@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="shadow sticky z-50 top-0">
       <nav className="bg-white border-gray-200 px-4 lg:px-6">
@@ -12,54 +18,101 @@ export default function Header() {
             </a>
           </Link>
 
-          <div className="flex items-center lg:order-2 ml-4">
-            <NavLink
-              to="register"
-              className="  hover:bg-white hover:text-black border-solid hover:border-2 border-black text-white bg-orange-700 hover:bg-orange-800 focus:ring-4font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden focus:outline-none"
+            onClick={toggleMenu}
+          >
+            <svg
+              className="w-6 h-6 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              Register
-            </NavLink>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              />
+            </svg>
+          </button>
 
+          {/* Mobile Menu */}
+          <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
+            <div className="flex flex-col mt-2 space-y-2">
+              <NavLink
+                to="/"
+                className="block px-4 py-2 text-gray-600 hover:text-orange-700"
+                activeClassName="text-orange-600"
+                exact
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/about"
+                className="block px-4 py-2 text-gray-600 hover:text-orange-700"
+                activeClassName="text-orange-600"
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="/contactus"
+                className="block px-4 py-2 text-gray-600 hover:text-orange-700"
+                activeClassName="text-orange-600"
+              >
+                Contact Us
+              </NavLink>
+              <NavLink
+                to="/register"
+                className="mb-2 block px-4 py-2 text-white bg-orange-700 hover:bg-orange-800"
+              >
+                Register
+              </NavLink>
+            </div>
           </div>
 
-          <div className="flex items-center lg:order-1 lg:ml-auto space-x-5">
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 space-y-2 lg:space-y-0 lg:space-x-5">
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center space-x-5">
+            <ul className="flex font-medium space-x-5">
               <li>
                 <NavLink
                   to="/"
-                  className={ ({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${ isActive ? "text-orange-600" : "text-gray-600" } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                  }
+                  className="text-gray-600 hover:text-orange-700"
+                  activeClassName="text-orange-600"
+                  exact
                 >
                   Home
                 </NavLink>
               </li>
-
               <li>
                 <NavLink
-                  to="about"
-                  className={ ({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${ isActive ? "text-orange-600" : "text-gray-600" } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                  }
+                  to="/about"
+                  className="text-gray-600 hover:text-orange-700"
+                  activeClassName="text-orange-600"
                 >
                   About
                 </NavLink>
               </li>
-
               <li>
                 <NavLink
-                  to="contactus"
-                  className={ ({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${ isActive ? "text-orange-600" : "text-gray-600" } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                  }
+                  to="/contactus"
+                  className="text-gray-600 hover:text-orange-700"
+                  activeClassName="text-orange-600"
                 >
                   Contact Us
                 </NavLink>
               </li>
             </ul>
+            <NavLink
+              to="/register"
+              className="text-white bg-orange-700 hover:bg-orange-800 px-5 py-2 rounded-lg text-sm"
+            >
+              Register
+            </NavLink>
           </div>
         </div>
       </nav>
     </header>
-  )
+  );
 }
