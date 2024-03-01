@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <a href="https://ibb.co/5vvCDF1">
-              <img src="https://i.ibb.co/tccnfXH/logo01.jpg" className="m-1.5 rounded-full height h-20 w-30" alt="Logo" border="0" />
+              <img src="https://i.ibb.co/tccnfXH/logo01.jpg" className="m-1.5 rounded-full height h-20 w-20" alt="Logo" border="0" />
             </a>
           </Link>
 
