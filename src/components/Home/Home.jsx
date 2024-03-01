@@ -13,7 +13,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full">
-                    <img className="" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrs4cQN4JwWxQaFpf-wt1YRPy5rUk6uIiyrQ&usqp=CAU' alt="image1" style={ { width: '40vw', height: '25vw' } } />
+                    <a href="https://ibb.co/61sQMdj">
+                        <img src="https://i.ibb.co/QCm0g5y/pngwing-com.png" className="w-full h-auto sm:w-110vw sm:h-70vw lg:w-96 lg:h-60" alt="pngwing-com" />
+                    </a>
                 </div>
 
             </aside>
