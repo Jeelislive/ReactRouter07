@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center ">
-                            <a href="https://ibb.co/5vvCDF1"><img src="https://i.ibb.co/tccnfXH/logo01.jpg" className="rounded-full height h-30 w-40"
+                            <a href="https://ibb.co/5vvCDF1"><img src="https://i.ibb.co/tccnfXH/logo01.jpg" className="rounded-full	 height h-40 w-40"
                                 alt="Logo" border="0" /></a>
                         </Link>
                     </div>
