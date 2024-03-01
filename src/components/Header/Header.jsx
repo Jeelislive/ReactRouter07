@@ -1,38 +1,29 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className="shadow sticky z-50 top-0">
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 ">
+      <nav className="bg-white border-gray-200 px-4 lg:px-6">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
-            <img
-              // src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-              src="https://images.pexels.com/photos/19526309/pexels-photo-19526309/free-photo-of-rj.jpeg"
-              className=" aspect-square:3/2 object-cover heigght h-20 w-30"
-              alt="Logo"
-            />
+            <a href="https://ibb.co/5vvCDF1">
+              <img src="https://i.ibb.co/tccnfXH/logo01.jpg" className="m-1.5 rounded-full height h-20 w-30" alt="Logo" border="0" />
+            </a>
           </Link>
-          <div className="flex items-center lg:order-2">
+
+          <div className="flex items-center lg:order-2 ml-4">
             <NavLink
               to="register"
-              className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              className="  hover:bg-white hover:text-black border-solid hover:border-2 border-black text-white bg-orange-700 hover:bg-orange-800 focus:ring-4font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Register
             </NavLink>
-            <Link
-              to="#"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
-            >
-              Login
-            </Link>
+
           </div>
-          <div
-            className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-            id="mobile-menu-2"
-          >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+
+          <div className="flex items-center lg:order-1 lg:ml-auto space-x-5">
+            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 space-y-2 lg:space-y-0 lg:space-x-5">
               <li>
                 <NavLink
                   to="/"
@@ -64,14 +55,11 @@ export default function Header() {
                 >
                   Contact Us
                 </NavLink>
-
-
               </li>
-
             </ul>
           </div>
         </div>
       </nav>
     </header>
-  );
-}   
+  )
+}
