@@ -19,6 +19,7 @@ export default function Header() {
             >
               Register
             </NavLink>
+
           </div>
 
           <div className="flex items-center lg:order-1 lg:ml-auto space-x-5">
