@@ -12,7 +12,11 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+<<<<<<< HEAD
     "cors": "^2.8.5",
+=======
+    "ejs": "^3.1.9",
+>>>>>>> 869552f842c5bdea0aaeb6c369c7e22345c136e7
     "express": "^4.18.3",
     "mongoose": "^8.2.0",
     "react": "^18.2.0",

@@ -109,6 +109,12 @@ export default function Header() {
               className="text-white bg-orange-700 hover:bg-orange-800 px-5 py-2 rounded-lg text-sm"
             >
               Register
+            </NavLink>  
+            <NavLink
+              to="/login"
+              className="text-white bg-orange-700 hover:bg-orange-800 px-5 py-2 rounded-lg text-sm"
+            >
+              Login
             </NavLink>
           </div>
         </div>
