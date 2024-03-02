@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 function Register() {
     return (
         <div className="form-container bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
@@ -13,7 +13,9 @@ function Register() {
                     <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password:</label>
                     <input type="password" id="password" name="password" placeholder="Password" required className="mt-1 p-2 block w-full border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm" />
                 </div>
+                <NavLink to="/dashboard">
                 <button type="submit" className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+                </NavLink>
             </form>
         </div>
     );
