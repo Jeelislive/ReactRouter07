@@ -7,11 +7,11 @@ export default function Home() {
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4 pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-5 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-2xl sm:text-4xl font-bold">
+                        <h2 className="text-2xl sm:text-6xl font-bold">
                             Study Materials
-                            <span className="block sm:hidden text-2xl text-red-600">PDFs are ready..</span>
-                        </h2>
+
                         <span className="hidden sm:block text-4xl text-red-600">PDFs are ready..</span>
+                        </h2>
                     </div>
                 </div>
 

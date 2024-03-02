@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-
-
+import Login from './components/Login/login'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home/Home'
@@ -10,7 +8,6 @@ import About from './components/About/About'
 import ContactUs from './components/ContactUs/ContactUs'
 import Layout from './Layout'
 import User from './components/User/User'
-
 import Register from './components/Register/Register.jsx'
 import Dashbord from './components/Home/Dashbord'
 
@@ -41,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashbord />,
+
+      },
+      {
+        path: "login",
+        element: <Login />,
 
       }
     ]
