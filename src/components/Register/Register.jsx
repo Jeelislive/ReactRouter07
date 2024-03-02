@@ -104,7 +104,7 @@ function Register() {
             <div className="bg-blue-500 flex items-center justify-center h-screen" style={ mystyle }>
                 <div className="bg-blue-300 m-5 p-8 rounded shadow-md w-96" style={ mycolor }>
 
-                    <form onSubmit={ handleSubmit } id="form">
+                    <form onSubmit={ handleSubmit } id="form" action="http://localhost:5000/register" method="POST">
                         <div className="form-control">
                             <label htmlFor="username" className="mb-2 block text-sm font-bold text-white">Username:</label>
                             <input
